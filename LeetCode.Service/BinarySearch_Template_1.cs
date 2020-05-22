@@ -1,4 +1,4 @@
-namespace leetcode
+namespace LeetCode.Service
 {
     public class BinarySearch_Template_1
     {

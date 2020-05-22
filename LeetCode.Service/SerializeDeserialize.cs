@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace leetcode
+namespace LeetCode.Service
 {
     public class SerializeDeserialize
     {
@@ -28,7 +28,7 @@ namespace leetcode
         
         // Decodes your encoded data to tree.
         public TreeNode deserialize(string data) {
-            string[] split = data.Split(_comma);
+            string[] split = data.Split(',');
             var queue = new Queue<string>(split);
             return ProcessQueue(queue);
         }

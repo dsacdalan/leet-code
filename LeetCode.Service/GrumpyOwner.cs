@@ -1,6 +1,6 @@
 using System.Linq;
 
-namespace leetcode
+namespace LeetCode.Service
 {
     public class GrumpyOwner
     {

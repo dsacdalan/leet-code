@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace leetcode
+namespace LeetCode.Service
 {
 public class MyHashSet {
 
