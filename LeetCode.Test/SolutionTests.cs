@@ -235,5 +235,20 @@ namespace LeetCode.Test
             Assert.AreEqual(3, obj.Ping(3002));
             Assert.AreEqual(1, obj.Ping(10000));
         }
+
+        [TestMethod]
+        public void LeafSimilar_1()
+        {
+            var root = new TreeNode(1)
+            {
+                left = new TreeNode(2),
+                right = new TreeNode(3)
+            };
+
+            var result = _service.LeafSimilar(root, root);
+
+            Assert.IsTrue(result);
+
+        }
     }
 }
