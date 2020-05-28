@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace LeetCode.Service
 {
-    public class SlidingWindow
+    public partial class Solution
     {
         public int LengthOfLongestSubstring(string s) {
         var set = new HashSet<char>();

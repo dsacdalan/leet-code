@@ -1,6 +1,6 @@
 namespace LeetCode.Service
 {
-    public class MaxConsecutive1s
+    public partial class Solution
     {
         public int LongestOnes(int[] A, int K) {
             var maxLeft = 0;

@@ -1,10 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace LeetCode.Service
 {
-    public class EmployeeImportance
+    public partial class Solution
     {
         public int GetImportance(IList<Employee> employees, int id) {
             var hashTable = new Hashtable(employees.Count);

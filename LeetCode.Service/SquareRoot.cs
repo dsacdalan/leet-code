@@ -1,6 +1,6 @@
 namespace LeetCode.Service
 {
-    public class BinarySearch_Template_1
+    public partial class Solution
     {
         public int MySqrt(int x) {
             if (x < 2)

@@ -2,7 +2,7 @@ using System;
 
 namespace LeetCode.Service
 {
-    public class MiddleOfLinkedList
+    public partial class Solution
     {
         public ListNode MiddleNode(ListNode head)
         {

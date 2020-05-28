@@ -2,7 +2,7 @@ using System.Linq;
 
 namespace LeetCode.Service
 {
-    public class GrumpyOwner
+    public partial class Solution
     {
         public int MaxSatisfied(int[] customers, int[] grumpy, int X) {
             // check for invalid

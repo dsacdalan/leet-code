@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace LeetCode.Service
 {
-    public class SerializeDeserialize
+    public partial class Solution
     {
         private string _comma = ",";
         private string _null = "n";

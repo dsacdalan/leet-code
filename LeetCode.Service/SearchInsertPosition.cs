@@ -1,6 +1,6 @@
 namespace LeetCode.Service
 {
-    public class SearchInsertPosition
+    public partial class Solution
     {
         public int SearchInsert(int[] nums, int target) {
             int left = 0;

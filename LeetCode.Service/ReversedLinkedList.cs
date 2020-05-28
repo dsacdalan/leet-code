@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace LeetCode.Service
 {
-    public class ReversedLinkedList
+    public partial class Solution
     {
         private ListNode Helper(ListNode head, ListNode reverse)
         {
