@@ -248,7 +248,39 @@ namespace LeetCode.Test
             var result = _service.LeafSimilar(root, root);
 
             Assert.IsTrue(result);
+        }
 
+        [TestMethod]
+        public void FloodFill_1()
+        {
+            int[][] image = new int[3][];
+            image[0] = new int[] {1,1,1};
+            image[1] = new int[] {1,1,0};
+            image[2] = new int[] {1,0,1};
+
+            var sr = 1;
+            var sc = 1;
+            var newColor = 2;
+
+            var result = _service.FloodFill(image, sr, sc, newColor);
+
+            Assert.IsNotNull(result);
+        }
+
+        [TestMethod]
+        public void FloodFill_2()
+        {
+            int[][] image = new int[2][];
+            image[0] = new int[] {0,0,0};
+            image[1] = new int[] {0,1,1};
+
+            var sr = 1;
+            var sc = 1;
+            var newColor = 1;
+
+            var result = _service.FloodFill(image, sr, sc, newColor);
+
+            Assert.IsNotNull(result);
         }
     }
 }
