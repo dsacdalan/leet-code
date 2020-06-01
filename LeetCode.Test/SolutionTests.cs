@@ -282,5 +282,15 @@ namespace LeetCode.Test
 
             Assert.IsNotNull(result);
         }
+
+        [TestMethod]
+        public void NumTeams_1()
+        {
+            var rating = new int[] {1,2,3,4,};
+
+            var result = _service.NumTeams(rating);
+
+            Assert.AreEqual(4, result);
+        }
     }
 }
