@@ -1,6 +1,8 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using LeetCode.Service;
 using System.Collections.Generic;
+using System;
+using System.Linq;
 
 namespace LeetCode.Test
 {
@@ -291,6 +293,30 @@ namespace LeetCode.Test
             var result = _service.NumTeams(rating);
 
             Assert.AreEqual(4, result);
+        }
+
+        [TestMethod]
+        public void FindDuplicates_1()
+        {
+            var nums = new int [] {4,3,2,7,8,2,3,1};
+
+            var result = _service.FindDuplicates(nums);
+            
+            Assert.AreEqual(2, result.Count);
+            Assert.IsTrue(result.Where(x => x == 2).Any());
+            Assert.IsTrue(result.Where(x => x == 3).Any());
+        }
+
+        [TestMethod]
+        public void FindDuplicates_2()
+        {
+            var nums = new int [] {10,2,5,10,9,1,1,4,3,7};
+
+            var result = _service.FindDuplicates(nums);
+            
+            Assert.AreEqual(2, result.Count);
+            Assert.IsTrue(result.Where(x => x == 10).Any());
+            Assert.IsTrue(result.Where(x => x == 1).Any());
         }
     }
 }
