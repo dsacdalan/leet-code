@@ -1,7 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using LeetCode.Service;
 using System.Collections.Generic;
-using System;
 using System.Linq;
 
 namespace LeetCode.Test
@@ -30,7 +29,7 @@ namespace LeetCode.Test
             Assert.AreEqual(5, result.val);
         }
 
-                [TestMethod]
+        [TestMethod]
         public void SearchInsertPosition_1()
         {
             var nums = new int[] {1,3,5,6};
@@ -61,6 +60,7 @@ namespace LeetCode.Test
 
             Assert.AreEqual(4, result);
         }
+
         [TestMethod]
         public void SearchInsertPosition_4()
         {
@@ -128,7 +128,6 @@ namespace LeetCode.Test
             head.next.next.next = new ListNode(4);
             head.next.next.next.next = new ListNode(5);
             head.next.next.next.next.next = new ListNode(6);
-
 
             var result = _service.MiddleNode(head);
 
