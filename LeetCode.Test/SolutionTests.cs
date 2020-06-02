@@ -318,5 +318,27 @@ namespace LeetCode.Test
             Assert.IsTrue(result.Where(x => x == 10).Any());
             Assert.IsTrue(result.Where(x => x == 1).Any());
         }
+
+        [TestMethod]
+        public void WordPattern_1()
+        {
+            var pattern = "abba";
+            var str = "dog cat cat dog";
+
+            var result = _service.WordPattern(pattern, str);
+
+            Assert.IsTrue(result);
+        }
+
+        [TestMethod]
+        public void WordPattern_2()
+        {
+            var pattern = "abba";
+            var str = "dog dog dog dog";
+
+            var result = _service.WordPattern(pattern, str);
+
+            Assert.IsFalse(result);
+        }
     }
 }
