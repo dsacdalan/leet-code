@@ -340,5 +340,16 @@ namespace LeetCode.Test
 
             Assert.IsFalse(result);
         }
+
+        [TestMethod]
+        public void RemoveDuplicates_1()
+        {
+            var nums = new int[] {1,1,2,};
+
+            var result = _service.RemoveDuplicates(nums);
+
+            Assert.AreEqual(1, nums[0]);
+            Assert.AreEqual(2, nums[1]);
+        }
     }
 }
