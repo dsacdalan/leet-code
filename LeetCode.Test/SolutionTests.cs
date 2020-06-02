@@ -351,5 +351,15 @@ namespace LeetCode.Test
             Assert.AreEqual(1, nums[0]);
             Assert.AreEqual(2, nums[1]);
         }
+
+        [TestMethod]
+        public void CheckExists_1()
+        {
+            var nums = new int[] {-2,0,10,-19,4,6,-8};
+
+            var result = _service.CheckIfExist(nums);
+
+            Assert.IsFalse(result);
+        }
     }
 }
