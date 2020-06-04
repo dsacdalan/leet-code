@@ -360,5 +360,16 @@ namespace LeetCode.Test
 
             Assert.IsFalse(result);
         }
+
+        [TestMethod]
+        public void FindAnagrams_1()
+        {
+            var s = "cbaebabacd";
+            var p = "abc";
+
+            var result = _service.FindAnagrams(s, p);
+
+            Assert.AreEqual(2, result.Count);
+        }
     }
 }
