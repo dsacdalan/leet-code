@@ -371,5 +371,25 @@ namespace LeetCode.Test
 
             Assert.AreEqual(2, result.Count);
         }
+
+        [TestMethod]
+        public void RomanToInt_1()
+        {
+            var s = "MCMXCIV";
+
+            var result = _service.RomanToInt(s);
+
+            Assert.AreEqual(1994, result);
+        }
+
+        [TestMethod]
+        public void RomanToInt_2()
+        {
+            var s = "V";
+
+            var result = _service.RomanToInt(s);
+
+            Assert.AreEqual(5, result);
+        }
     }
 }
