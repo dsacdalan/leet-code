@@ -391,5 +391,35 @@ namespace LeetCode.Test
 
             Assert.AreEqual(5, result);
         }
+
+        [TestMethod]
+        public void TitleToNumber_1()
+        {
+            var s = "ZY";
+
+            var result = _service.TitleToNumber(s);
+
+            Assert.AreEqual(701, result);
+        }
+
+        [TestMethod]
+        public void TitleToNumber_2()
+        {
+            var s = "AB";
+
+            var result = _service.TitleToNumber(s);
+
+            Assert.AreEqual(28, result);
+        }
+
+        [TestMethod]
+        public void TitleToNumber_3()
+        {
+            var s = "A";
+
+            var result = _service.TitleToNumber(s);
+
+            Assert.AreEqual(1, result);
+        }
     }
 }
