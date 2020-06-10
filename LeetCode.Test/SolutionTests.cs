@@ -421,5 +421,15 @@ namespace LeetCode.Test
 
             Assert.AreEqual(1, result);
         }
+
+        [TestMethod]
+        public void MissingNumber_1()
+        {
+            var nums = new int[] {9,6,4,2,3,5,7,0,1};
+
+            var result = _service.MissingNumber(nums);
+
+            Assert.AreEqual(8, result);
+        }
     }
 }
